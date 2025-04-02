@@ -21,10 +21,10 @@ def generate_graph(n, p):
 
 def convert_to_adjacency_list(edges, n):
     graph_dict = {}
-    for i in range(n - 1):
+    for i in range(n ):
         graph_dict[i] = []
-        for j in range(0, n - 1):
+        for j in range(0, n ):
             if edges[i][j] != None:
-                graph_dict[i].append(j)
+                graph_dict[i].append((j, edges[i][j]))
 
     return dict(sorted(graph_dict.items()))
