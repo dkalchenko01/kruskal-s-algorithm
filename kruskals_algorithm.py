@@ -1,6 +1,3 @@
-from operator import truediv
-
-
 def convert_adjecency_list_to_sorted_list(adjecency_list: dict):
     tuples_list = []
     for i in adjecency_list.keys():
@@ -45,6 +42,3 @@ def dfs(v, tree, visited_list : list):
         if neighbour not in visited_list:
             dfs(neighbour, tree, visited_list)
     return visited_list
-
-
-
